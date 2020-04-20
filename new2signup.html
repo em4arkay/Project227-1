@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SmileJob.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="new.css">
+        <link rel="stylesheet" href="new1signup.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    </head>
+    <body>
+        
+        
+        <!-- Navigation-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="new1.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="newfinding.html">Finding</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">II</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">III</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">IV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">V</a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sign Up
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="new1signup.html">For JobSeekers</a>
+                    <a class="dropdown-item active" href="new2signup.html">For Companies</a>
+                  </div>
+                </li>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LOGIN</button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"  data-toggle="modal" data-target="#Modal" data-whatever="@mdo">For JobSeekers</a>
+                      <a class="dropdown-item" data-toggle="modal" data-target="#Modal" data-whatever="@mdo">For Companies</a>
+                    </div>
+                  </div>
+              </ul>
+            </div>
+        </nav>
+
+        <!--End Navigation -->
+         <!--Start Modal Popup-->
+
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="JobSeekers" class="needs-validation" novalidate>
+                            <div class="form-group row">
+                              <div class="form-group col-md-12">
+                                <label for="validCustomUsername">Username</label>
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                  </div>
+                                  <input type="text" class="form-control" id="validCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Username" required>
+                                  <div class="invalid-feedback">
+                                    Please choose a username.
+                                  </div>
+                                </div> 
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="inputUsername">Email</label>
+                                <input type="text" class="form-control" id="inputUsername" value="" placeholder="email@mail.com" required>
+                                <div class="invalid-feedback">
+                                    Please type an email.
+                                </div>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="inputPassword">Password</label>
+                                <input type="password" class="form-control" id="inputPassword" value="" placeholder="password" required>
+                                <div class="invalid-feedback">
+                                    Must be 8-20 characters long.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Remember Password</label>
+                                    <span><a href="#">Forgot Password?</a></span>
+                                    
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">LOG IN</button>
+                        </form>
+                          
+                        <!--Script modal Form-->
+                        <script>
+                        (function() {
+                        'use strict';
+                        window.addEventListener('load', function() {
+                            var forms = document.getElementsByClassName('needs-validation');
+                            var validation = Array.prototype.filter.call(forms, function(form) {
+                            form.addEventListener('submit', function(event) {
+                                if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                            });
+                        }, false);
+                        })();
+                        </script><!--End Script Modal Form-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Script Modal Popup-->
+        <script>
+            $('#Modal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var recipient = button.data('whatever') // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this)
+        modal.find('.modal-title').text('New message to ' + recipient)
+        modal.find('.modal-body input').val(recipient)
+        })
+        </script><!--End Modal Popup-->
+       <!--Start Register Form-->
+        <div class="container1">
+            <div class="img">
+                <img src="img/co-working.png">
+            </div>
+            <div class="login-content">
+                <form id="Companies" class="needs-validation" novalidate>
+                    <img src="img/avatar2.png">
+                    <div class="form-group row">
+                        <div class="form-group col-md-12">
+                            <label for="validCustomUsername">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                </div>
+                                <input type="text" class="form-control" id="validCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Username" required>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="inputUsername">Email</label>
+                            <input type="text" class="form-control" id="inputUsername" value="" placeholder="email@mail.com" required>
+                            <div class="invalid-feedback">
+                                Please enter an email.
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" value="" placeholder="password" required>
+                            <div class="invalid-feedback">
+                                Must be 8-20 characters long.
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="inputConfirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="inputConfirmPassword" value="" placeholder="password" required>
+                            <div class="invalid-feedback">
+                                Must be 8-20 characters long.
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="inputComname">Company Name</label>
+                            <input type="text" class="form-control" id="inputComname" value="" placeholder="Company" required>
+                            <div class="invalid-feedback">
+                                Please enter a company name.
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="inputIndustry">Industry</label>
+                            <select class="custom-select" class="form-control" id="inputIndustry" value="" required>
+                                <option value="">...</option>
+                                <option value="1">Accounting and Law Service</option>
+                                <option value="2">Advertising</option>
+                                <option value="3">Agricultural</option>
+                                <option value="4">Automobile</option>
+                                <option value="5">Banking</option>
+                                <option value="6">Chemical/Plastic</option>
+                                <option value="7">Computer/IT</option>
+                                <option value="8">Construction</option>
+                                <option value="9">Consulting</option>
+                                <option value="10">Design/Interior Design</option>
+                                <option value="11">Education</option>
+                                <option value="12">Electrical</option>
+                                <option value="13">Electronic</option>
+                                <option value="14">Energy</option>
+                                <option value="15">Entertaining</option>
+                                <option value="16">Finance</option>
+                                <option value="17">Food, Drink &amp; Tobacco</option>
+                                <option value="18">Furniture/Appliance</option>
+                                <option value="19">Garment</option>
+                                <option value="20">Government/Non-profit</option>
+                                <option value="21">Hospital/Clinic</option>
+                                <option value="22">Hotel/Resort/Spa/Golf Club</option>
+                                <option value="23">Import/Export</option>
+                                <option value="24">Insurance</option>
+                                <option value="25">Jewelry</option>
+                                <option value="26">Loan/Credit Card</option>
+                                <option value="27">Mass Communication</option>
+                                <option value="28">Medicine/Cosmetic/Medical Equipment</option>
+                                <option value="29">Packaging</option>
+                                <option value="30">Paper</option>
+                                <option value="31">Publishing/Printing</option>
+                                <option value="32">Real Estate</option>
+                                <option value="33">Recruitment</option>
+                                <option value="34">Retail</option>
+                                <option value="35">Services</option>
+                                <option value="36">Steel/Metal</option>
+                                <option value="37">Telecommunication</option>
+                                <option value="38">Trading/Commerce</option>
+                                <option value="39">Transportation</option>
+                                <option value="40">Travel</option>
+                                <option value="41">Others</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a industry.
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="inputContact">Contact Person</label>
+                            <input type="text" class="form-control" id="inputContact" value="" placeholder="Contact Person" required>
+                            <div class="invalid-feedback">
+                                Please enter a contact.
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="inputTel">Telephone No.</label>
+                            <input type="text" class="form-control" id="inputComname" value="" placeholder="Tel." required>
+                            <div class="invalid-feedback">
+                                Please enter a telephone no.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="custom-control-label" for="invalidCheck">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                            </div>
+                    </div>
+                    <button class="btn2 btn-primary" type="submit">SIGN UP</button>
+                    <span>Already have an account?
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#Modal" data-whatever="@mdo">LOGIN</button>
+                    </span>
+                </form>
+            </div>
+        </div>
+    
+       
+       <!--End Register Form-->
+
+        <!--Start Contacts Section-->
+		<footer>
+			<div class="row justify-content-center">
+
+				<div class="col-md-5 text-center">
+					<h4>ABC DEF</h4>
+					<p>zyxwvutsrqponmlkjihgfedcba</p>
+					<strong>Contact Info</strong>
+					<p>(02) 222-2222<br>email@mail.com</p>
+					<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+				</div>
+
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1494.9552590138494!2d100.6004820889737!3d13.631329862369775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x133e221e4499d09c!2zNy1FbGV2ZW4g4LiB4Lil4Liy4LiH4LiL4Lit4Lii4Lio4Lij4Li14Lia4Li44LiN4LmA4Lij4Li34Lit4LiH4oCLIDExNTM0!5e0!3m2!1sth!2sth!4v1587109329390!5m2!1sth!2sth" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+
+				<hr class="socket">
+				&copy; ABC DEF
+
+			</div>
+		</footer>
+	<!--End Contacts Section-->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+
+    </body>
+</html>
