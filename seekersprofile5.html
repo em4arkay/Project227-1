@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SmileJob.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="new.css">
+        <link rel="stylesheet" href="seekersprofile.css">
+        
+    </head>
+    <body>
+        
+        <!-- Navigation-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="new1.html">Navbar</a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="new1.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="newfinding.html">Finding</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">III</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">IV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">V</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sign Up
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="new1signup.html">For JobSeekers</a>
+                    <a class="dropdown-item" href="new2signup.html">For Companies</a>
+                  </div>
+                </li>
+                <div class="col-md-12 col-sm-12 col-xs-12 dropdown applicant-dropdown applicant-pro open">
+                    <button class="btn btn-default dropdown-toggle pic-applicant applicant-only" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span class="tooltip-div">
+                            <img src="img/avatar.png" style="max-width: 35px; height: 35px; border-radius: 50%;">
+                            <!-- <div class="circle-red">N</div>-->
+                        </span>
+                        <span class="caret"></span>
+                    </button>
+                
+                    <ul class="dropdown-menu dropdown-menu-applicant" aria-labelledby="dropdownMenu1">
+                        <div class="col-md-12 col-sm-12 col-xs-12 pic-in-applicant margin-top margin-bottom">
+                            <img src="img/avatar.png" style="max-width: 35px; height: 35px;">
+                        </div>
+                
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-pic-applicant margin-bottom">
+                            <ul class="sub-text-pic">
+                                <li class="text-pic-img">ID : 3037224</li>
+                                <li class="text-pic-img margin-bottom-1">natchanondanual@gmail.com</li>
+                                <li class="text-pic-img"><a href="https://www.jobbkk.com/jobseeker/create/new_resume">Edit Profile</a></li>
+                            </ul>
+                        </div>
+                
+                      
+                        <div class="col-md-12 col-sm-12 col-xs-12 sub-list">
+                            <div class="row">
+                            <li><a href="https://www.jobbkk.com/jobseeker">Member Page</a></li>
+                            <li><a href="https://www.jobbkk.com/jobseeker/create/new_resume">New/Edit Resume</a></li>
+                            <li>
+                                <button type="button" class="btnData" id="btnData">Manage <span class="caret"></span></button>
+                                <ul class="dropdownMenuNone listMenuBlock">
+                                    <li><a href="https://www.jobbkk.com/jobseeker/job/apphis"><i class="fa fa-angle-right" aria-hidden="true"></i> Application History</a></li>
+                                    <li><a href="https://www.jobbkk.com/jobseeker/job/favorite_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Favorite</a></li>
+                                    <li><a href="https://www.jobbkk.com/jobseeker/job/icheck_new"><i class="fa fa-angle-right" aria-hidden="true"></i>iCheck</a></li>
+                                    <li><a href="https://www.jobbkk.com/jobseeker/job/interview_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Interview</a></li>
+                                    <li><a href="https://www.jobbkk.com/jobseeker/job/match_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Job Match</a></li>
+                                    <li><a href="https://www.jobbkk.com/jobseeker/job/reqresume_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Request Resume</a></li>
+                                    <li><a href="https://www.jobbkk.com/jobseeker/job/schedule_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Schedule</a></li>
+                                    <li><a href="https://www.jobbkk.com/jobseeker/job/security_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Security</a></li>
+                                    <li><a href="https://www.jobbkk.com/jobseeker/controlpanel/setting">Setting usage</a></li>
+                                </ul>
+                            </li>
+                            <li role="separator"></li>
+                            <li><a href="https://www.jobbkk.com/login/resume/logout">Log Out</a></li>
+                        </div>
+                        </div>
+                        
+                        <!-- <div class="col-md-12 col-sm-12 col-xs-12 sub-list">
+                            <div class="row">  
+                                <li><a href="https://www.jobbkk.com/jobseeker">หน้าสมาชิก</a></li>
+                                <li><a href="https://www.jobbkk.com/jobseeker/create/new_resume">สร้าง/แก้ไขเรซูเม่</a></li>
+                                <li><a href="https://www.jobbkk.com/jobseeker/job">จัดการข้อมูลงาน</a></li>
+                                <li><a href="https://www.jobbkk.com/webboard/main">เว็บบอร์ด</a></li>
+                                <li><a href="https://www.jobbkk.com/jobseeker/controlpanel/setting">ตั้งค่า</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="https://www.jobbkk.com/login/resume/logout">ออกจากระบบ</a></li>
+                            </div>
+                        </div> -->
+                    </ul>
+                </div>
+              </ul>
+            </div>
+        </nav>
+        <!--Nav II-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 3.5rem; background:rgba(196, 189, 189, 0.6)!important;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown" style="align-items: center; justify-content: center;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="seekersprofile.html">Member Page<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="seekersprofile2.html">New/Edit Resume</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="seekersprofile3.html">Manage Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="seekersprofile4.html">Setting</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Manage
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="seekersprofile3.html">Application History</a>
+                        <a class="dropdown-item" href="seekersprofile5.html">Favorite</a>
+                        <a class="dropdown-item" href="seekersprofile6.html">iCheck</a>
+                        <a class="dropdown-item" href="seekersprofile7.html">Interview</a>
+                        <a class="dropdown-item" href="seekersprofile8.html">Job Match</a>
+                        <a class="dropdown-item" href="seekersprofile9.html">Request Resume</a>
+                        <a class="dropdown-item" href="seekersprofile10.html">Schedule</a>
+                        <a class="dropdown-item" href="seekersprofile11.html">Security</a>
+                        <a class="dropdown-item" href="seekersprofile4.html">Setting usage</a>
+                    </div>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="new1.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-md-12 menuUser">
+                        <ul>
+                            
+                            
+                            <li class="dropdown">
+                                <button type="button" id="dropdownMenuResume" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Manage <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuResume">
+                                </ul>
+                            </li>
+                            <li><a href="#/login/resume/logout">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        </nav>
+
+        <!--End Navigation -->
+        
+        
+
+        <!--Main Page-->
+
+        <section class="container margin-bottom">
+            <article class="row">
+                
+                            <div class="col-md-12 col-sm-12 col-xs-12 jobbkk-link-text margin-bottom margin-top">
+                    <ul>
+                        <li><a href="https://www.jobbkk.com/jobseeker">Home</a></li>
+                        
+                                                    <li> &gt; </li>
+                                                                    <li><a class="text-red">Favorite</a></li>
+                                
+                        
+                    </ul>
+                </div>
+    
+                
+            <!--รูปข้อมูลบริษัท-->
+            <div class="col-md-3 col-sm-4 col-xs-12 data-pic-company">
+                <div class="box-circle" id="resume_score">
+                    <div class="chart" data-percent="2">2%<canvas height="80" width="80"></canvas></div>
+                </div>
+    
+                <div class="jobbkk-border-grey jobbkk-border-radius jobbkk-none overflow-hidden margin-bottom">
+                    <figure class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="pic-company pic-company-cc">
+                                <img src="https://www.jobbkk.com/assets/template/jobbkk/theme01/assets/images/jobseeker/mem_prof_pic.jpg">
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+    
+                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom">
+                    <div class="row">
+                        <div class="see-profile see-profile-1 preview-resume" id="preview_resume">
+                                                            <a target="_blank">Preview</a>
+                                                </div>
+                    </div>
+                </div>
+                <!--menu dashboard-->
+                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom">
+                    <div class="row">
+                        <!--menu dashboard pc-->
+                        <div class="nav-side-menu">
+                            <div class="bg-side-menu">
+                                <div class="dashboard-job">
+                                    <h3>Menu for Applicant</h3>
+                                </div>
+                                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                            </div>
+    
+                            <div class="menu-list">
+                                <ul id="menu-content" class="menu-content collapse out menu-dashboard">
+                                    <li><a href="https://www.jobbkk.com/jobseeker"><img src="https://www.jobbkk.com/assets/template/jobbkk/theme02/images/resume/menu-resume-1.png">Home <span class="dashboard-new">New</span></a></li>
+                                    <li id="create_update_resume"><a href="https://www.jobbkk.com/jobseeker/create/new_resume"><img src="https://www.jobbkk.com/assets/template/jobbkk/theme02/images/resume/menu-resume-2.png">New/Edit Resume</a></li>
+                                    <li id="manage_infomation" data-toggle="collapse" data-target="#postjob" class="collapsed"><a><img src="https://www.jobbkk.com/assets/template/jobbkk/theme02/images/resume/menu-resume-3.png">Manage										<span class="arrow"></span></a>
+                                    </li>
+                                    <ul class="sub-menu collapse job-sub-menu in" id="postjob">
+                                        <li><a href="https://www.jobbkk.com/jobseeker/job/apphis">Application History</a></li>
+                                        <li class="current"><a href="https://www.jobbkk.com/jobseeker/job/favorite_new">Favorite</a></li>
+                                        <li><a href="https://www.jobbkk.com/jobseeker/job/icheck_new">iCheck</a></li>
+                                        <li><a href="https://www.jobbkk.com/jobseeker/job/interview_new">Interview</a></li>
+                                        <li><a href="https://www.jobbkk.com/jobseeker/job/match_new">Job Match</a></li>
+                                        <li><a href="https://www.jobbkk.com/jobseeker/job/reqresume_new">Request Resume</a></li>
+                                        <li><a href="https://www.jobbkk.com/jobseeker/job/schedule_new">Schedule</a></li>
+                                        <li><a href="https://www.jobbkk.com/jobseeker/job/security_new">Security</a></li>
+                                    </ul>
+                                    <li><a href="https://www.jobbkk.com/jobseeker/addition/quiz"><img src="https://www.jobbkk.com/assets/template/jobbkk/theme02/images/resume/menu-resume-4.png">Questionnaire</a></li>
+                                    <li><a href="https://www.jobbkk.com/webboard/main"><img src="https://www.jobbkk.com/assets/template/jobbkk/theme02/images/resume/menu-resume-5.png">Webboard</a></li>
+                                    <li><a href="https://www.jobbkk.com/jobseeker/controlpanel/setting"><img src="https://www.jobbkk.com/assets/template/jobbkk/theme02/images/resume/menu-resume-6.png">Setting</a></li>
+                                    <li><a href="#"><img src="https://www.jobbkk.com/assets/template/jobbkk/theme02/images/resume/menu-resume-7.png">Recommended usage</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end menu dashboard pc-->
+                    </div>
+                </div>
+                <!--end menu dashboard-->
+            </div>
+    
+            <div class="col-md-9 col-sm-8 col-xs-12" id="body_include">
+                            <!--ยินดีต้อนรับ-->
+                    <div class="bg-drtail overflow-hidden">
+                        <div class="col-xs-12 col-sm-12 col-md-12 margin-bottom">
+                            <div class="history-work mt">
+                                <h4>Favorite <a href="#"><i class="fa fa-info-circle color-info" aria-hidden="true"></i></a></h4>
+                            </div>
+                            <div class="btn-table line-work mt">
+                                <a href="#" onclick="Delete()"><i class="fa fa-trash-o"></i> Delete</a>
+                            </div>
+                            <!--Table-->
+                            <div class="table-responsive table-color">
+                                <table class="table table-hover-style text-position-1 table-top">
+                                    <thead>
+                                        <tr>
+                                            <th><label><input type="checkbox" id="check_all"></label></th>
+                                            <th class="table-width-1-1">Position / Company</th>
+                                            <th class="table-width-2 td-position">Location / Salary</th>
+                                            <th class="table-width-3">Select date</th>
+                                            <th class="table-width-4">Manage</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table_favorite">
+                                                                            <tr>
+                                            <td colspan="5" style="text-align:center;">No Data</td>
+                                        </tr>
+                                                                    </tbody>
+                                </table>
+                            </div>
+                            <!--End Table-->
+                            <!--buttom-table-->
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-6 col-md-6 mobile-7 margin-bottom mt-1">
+                                                <label>Total 0 lists.</label>
+                                            </div>
+    
+                                            <div class="col-xs-6 col-sm-6 col-md-6 mobile-7 margin-bottom mt-1-2-2">
+                                                <div class="form-inline">
+                                                    <label>Display Results</label>
+                                                    <select class="form-control form-control-style-4" id="display_num">
+                                                                                                                <option value="10" selected="">10</option>
+                                                                                                                <option value="15">15</option>
+                                                                                                                <option value="20">20</option>
+                                                                                                                <option value="25">25</option>
+                                                                                                        </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-xs-12 web-pagination">
+                                        <nav aria-label="Page navigation">
+                                                                                </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!--ยินดีต้อนรับ-->
+    
+    <!-- Load modal -->
+    <section>
+        <div class="modal fade" id="company-share" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header login-header">
+                        <button type="button" class="close close-login" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title text-login" id="myModalLabel">Share</h4>
+                    </div>
+    
+                    <div class="modal-body overflow-hidden">
+                        <div class="col-md-4 col-sm-4 col-xs-12 jobbkk-register-social margin-bottom">
+                            <h5 class="margin-bottom">Social Share</h5>
+                        </div>
+    
+                        <div class="col-md-8 col-sm-8 col-xs-12 jobbkk-share-social">
+                            <div class="row">
+                                <ul>
+                                    <li data-sns="facebook" class="tooltip-div"><a href="#" target="_blank" class="icon-fb" data-toggle="tooltip" data-placement="bottom" title="facebook"></a></li>
+    <!--                                <li class="tooltip-div"><a href="#" class="icon-youtube" data-toggle="tooltip" data-placement="bottom" title="youtube"></a></li>-->
+                                    <li data-sns="line" class="tooltip-div"><a href="#" target="_blank" class="icon-line" data-toggle="tooltip" data-placement="bottom" title="line"></a></li>
+                                    <li data-sns="twitter" class="tooltip-div"><a href="#" target="_blank" class="icon-twis" data-toggle="tooltip" data-placement="bottom" title="twister"></a></li>
+                                    <li data-sns="google+" class="tooltip-div"><a href="#" target="_blank" class="icon-google" data-toggle="tooltip" data-placement="bottom" title="Google"></a></li>
+    <!--                                <li class="tooltip-div"><a href="#" class="icon-skype" data-toggle="tooltip" data-placement="bottom" title="skype"></a></li>-->
+    <!--                                <li class="tooltip-div"><a href="#" class="icon-intragram" data-toggle="tooltip" data-placement="bottom" title="intragram"></a></li>-->
+                                    <!-- <li class="tooltip-div"><a href="#" class="icon-copylink" data-toggle="tooltip" data-placement="bottom" title="copylink"></a></li> -->
+    <!--                                <li class="tooltip-div"><a href="#" class="icon-qrcode" data-toggle="tooltip" data-placement="bottom" title="qrcode"></a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section>
+        <div class="modal fade" id="variety-share" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header login-header">
+                        <button type="button" class="close close-login" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title text-login" id="myModalLabel">Social Share</h4>
+                    </div>
+    
+                    <div class="modal-body overflow-hidden">
+                        <div class="col-md-4 col-sm-4 col-xs-12 jobbkk-register-social margin-bottom">
+                            <h5 class="margin-bottom">Social Share</h5>
+                        </div>
+    
+                        <div class="col-md-8 col-sm-8 col-xs-12 jobbkk-share-social">
+                            <div class="row">
+                                <ul>
+                                    <li data-sns="facebook" class="tooltip-div"><a href="#" target="_blank" class="icon-fb" data-toggle="tooltip" data-placement="bottom" title="facebook"></a></li>
+    <!--                                <li class="tooltip-div"><a href="#" class="icon-youtube" data-toggle="tooltip" data-placement="bottom" title="youtube"></a></li>-->
+                                    <li data-sns="line" class="tooltip-div"><a href="#" target="_blank" class="icon-line" data-toggle="tooltip" data-placement="bottom" title="line"></a></li>
+                                    <li data-sns="twitter" class="tooltip-div"><a href="#" target="_blank" class="icon-twis" data-toggle="tooltip" data-placement="bottom" title="twister"></a></li>
+                                    <li data-sns="google+" class="tooltip-div"><a href="#" target="_blank" class="icon-google" data-toggle="tooltip" data-placement="bottom" title="Google"></a></li>
+    <!--                                <li class="tooltip-div"><a href="#" class="icon-skype" data-toggle="tooltip" data-placement="bottom" title="skype"></a></li>-->
+    <!--                                <li class="tooltip-div"><a href="#" class="icon-intragram" data-toggle="tooltip" data-placement="bottom" title="intragram"></a></li>-->
+                                    <li class="tooltip-div"><a href="#" class="icon-copylink" data-toggle="tooltip" data-placement="bottom" title="copylink"></a></li>
+    <!--                                <li class="tooltip-div"><a href="#" class="icon-qrcode" data-toggle="tooltip" data-placement="bottom" title="qrcode"></a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://www.jobbkk.com/assets/2016/js/social.min.js?ver=0"></script>
+    <script type="text/javascript">
+    
+        var http_fb = "https://www.facebook.com/sharer.php?u=";
+        var http_tw = "https://twitter.com/home/?status=";
+        var http_gg = "https://plus.google.com/share?url";
+        var http_line = "https://line.naver.jp/R/msg/text/?";
+        var _share_social_link = "";
+    
+        function share(_social_link, _com_id, _job_id) {
+            if (_job_id != '' && _job_id != 0){
+                _share_social_link = _social_link + '/' + _com_id + '/' + _job_id;
+            } else {
+                _share_social_link = _social_link + '/' + _com_id;
+            }
+            $('li[data-sns = "facebook"] a').attr("href",http_fb + _share_social_link);
+            $('li[data-sns = "twitter"] a').attr("href",http_tw + _share_social_link);
+            $('li[data-sns = "google+"] a').attr("href",http_gg + _share_social_link);
+            $('li[data-sns = "line"] a').attr("href",http_line + _share_social_link);
+        }
+    
+    
+        function share_variety(_social_link, _variety_id) {
+    
+            _share_social_link = _social_link + '/' + _variety_id;
+    
+            $('li[data-sns = "facebook"] a').attr("href",http_fb + _share_social_link);
+            $('li[data-sns = "twitter"] a').attr("href",http_tw + _share_social_link);
+            $('li[data-sns = "google+"] a').attr("href",http_gg + _share_social_link);
+            $('li[data-sns = "line"] a').attr("href",http_line + _share_social_link);
+        }
+    
+    </script>
+    <section>
+        <div class="modal fade" id="Resumelist" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-jobseeker="">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+    
+                    <div class="modal-header login-header">
+                        <button type="button" class="close close-login" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title text-login" id="myModalLabel">Apply</h4>
+                    </div>
+    
+                    <div id="ApplyNowJob">
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script type="text/javascript">
+        var baseURl = "https://www.jobbkk.com/jobs/";
+        var url_favorite = 'https://www.jobbkk.com/jobs/favorite';
+        var URL_ApplyNowJob =   'https://www.jobbkk.com/jobs/apply/loadApply_job';
+        var url_load_Resume = 'https://www.jobbkk.com/jobs/apply/load_Resume';
+        var url_SendApplyJob = 'https://www.jobbkk.com/jobs/apply/SendApplyJob';
+        var msg_apply_success = 'You have successfully  Applied for a job.';
+        var msg_apply_error = 'You have already applied for this job.';
+        var msg_alert_error = 'For job applicants only.';
+        var msg_favorite_success = 'You have successfully saved this position.';
+        var msg_favorite_warning = 'You have saved this position.';
+        var msg_alert_job = 'This job position is blocked.';
+        var msg_error = 'error';
+        var msg_validate = 'Please select resume';
+    
+        //บันทึก หรือเก็บงาน
+        function favorite(company_id, jobpost_id) {
+            $.ajax({
+                type: "POST",
+                url: url_favorite + '/' + company_id + '/' + jobpost_id,
+                success: function (msg) {
+                    // respond(msg);
+                    if (msg == "Successful"){
+                        swal({
+                            type: 'success',
+                            title: 'Success',
+                            text: msg_favorite_success,
+                            showConfirmButton: false,
+                            timer: 2500
+                        });
+                        return false;
+                    }else {
+                        swal({
+                            type: 'warning',
+                            title: 'Warning',
+                            text: msg_favorite_warning,
+                            showConfirmButton: false,
+                            timer: 2500
+                        });
+                        return false;
+                    }
+    
+                }
+            });
+        }
+    
+        //ติดตาม
+        $("body").on("click", "[data-click='btn-follow']", function () {
+            var pos_data = $(this).data("job");
+            var pos_company = $(this).data("company");
+            var pos_member = $(this).data("member");
+            var $path ;
+            var $this = $(this);
+    
+    
+            if($(this).hasClass("bt-follow active"))
+                $path = baseURl + "umfollow/" + pos_company + "/" + pos_data  + "/" + pos_member  ;
+            else if($(this).hasClass("bt-follow  active"))
+                $path = baseURl + "umfollow/" + pos_company + "/" + pos_data  + "/" + pos_member  ;
+            else
+                $path = baseURl + "follow/" + pos_company + "/" + pos_data + "/1" ;
+    
+            if(typeof pos_data !== 'undefined'){
+                $.post( $path  , function(data){
+                    if(data == "Successful"){
+                        $(".bt-follow").addClass("active");
+                    }
+                    else if( data  == "Unfollow")
+                    {
+                        $(".bt-follow").removeClass("active");
+                    }
+    
+                });
+            }
+        });
+    
+        $("body").on("click", "[data-click='btn-apply']", function () {
+            jobpost_id = $(this).data("job");
+            var jobseeker = $(this).data("jobseeker");
+            $("#ApplyNowJob").load(URL_ApplyNowJob + "/" + jobseeker + "/" + jobpost_id);
+        });
+    
+        function ChkResumeID(resume_id)
+        {
+            $('input[name="resume_id"]').val(resume_id);
+        }
+    
+    
+        function checkresume() {
+            var resume_id = $("input[name='resume_id']").val();
+            var apply_job_id = $("input[name='apply_job_id']").val();
+    
+            if(!resume_id)
+            {
+                send_checkjob();
+                return false;
+            }
+    
+            $.post( url_load_Resume + '/' + resume_id + '/' + apply_job_id,
+                function(json)
+                {
+                    if(json.result == 'success')
+                    {
+                        send_job(resume_id, jobpost_id);
+                    }
+                },
+                'json'
+            );
+    
+        }
+    
+        function send_job(resume_id, jobpost_id) {
+            var model  = $("#Resumelist") ;
+            $.ajax({
+                type: "POST",
+                url: url_SendApplyJob + '/' + resume_id + '/' + jobpost_id,
+                data: $("#frmCreate_Appy").serialize(),
+                success: function (msg) {
+                    if (msg == "suss"){
+    
+                        //$.ajaxSetup({
+                        //    cache: false
+                        //});
+                        //$("#loadnumapply").load('//' + jobpost_id );
+                        //$("[data-target='#Resumelist']").each( function(k, e) {
+                        //    var v_job = $(this).data('job');
+                        //    if(v_job == jobpost_id){
+                        //        $(this).prop("disabled",true);
+                        //    }
+                        //});
+                        model.modal('hide');
+                        swal({
+                            type: 'success',
+                            title: 'Success',
+                            text: msg_apply_success,
+                            showConfirmButton: false,
+                            timer: 2500
+                        });
+                        return false;
+                    } else if (msg == "error"){
+                        model.modal('hide');
+                        swal({
+                            type: 'warning',
+                            title: 'Warning',
+                            text: msg_apply_error,
+                            showConfirmButton: false,
+                            timer: 2500
+                        });
+                        return false;
+                    } else {
+                        model.modal('hide');
+                        swal({
+                            type: 'error',
+                            title: 'Error',
+                            text: msg,
+                            showConfirmButton: false,
+                            timer: 2500
+                        });
+                        return false;
+                    }
+                }
+            });
+        }
+    
+        function send_checkjob(){
+    
+            swal({
+                type: 'error',
+                title: 'Error',
+                text: msg_validate,
+                showConfirmButton: false,
+                timer: 2500
+            });
+            return false;
+        }
+    
+        function alert_msg() {
+            swal({
+                type: 'warning',
+                title: 'Warning',
+                text: msg_alert_error,
+                showConfirmButton: false,
+                timer: 2500
+            });
+            return false;
+        }
+    
+        function alert_msg_apply(){
+            swal({
+                type: 'warning',
+                title: 'Warning',
+                text: msg_alert_job,
+                showConfirmButton: false,
+                timer: 2500
+            });
+            return false;
+    
+        }
+    
+        $("body").on("click", "[data-click^='btn']", function () {
+            var company_id = $(this).data("company");
+            var postjob_id = $(this).data("job");
+            var target = $(this).data("target");
+            $(target).data("company", company_id ).data("job",postjob_id);
+        });
+    
+    </script><!-- load modal -->
+    
+    <script type="text/javascript">
+    
+        $('#display_num').on('change',function(){
+            var result = $('#display_num').val();
+            $.ajax({
+                url: 'https://www.jobbkk.com/jobseeker/resume/display_result',
+                data: {result: result},
+                type: 'get',
+                success: function (data)
+                {
+                    page(1);
+                }
+            });
+    
+        });
+    
+        $('#check_all').on('click',function(){
+            var input = $('#check_all');
+            var chk_box = $('#table_favorite').find('input[type="checkbox"]');
+            var checked = false;
+            
+            if($(input).is(':checked')) checked = true;
+            
+            $.each(chk_box, function(i, checkbox){
+                $(checkbox).prop('checked', checked);
+            });
+        });
+    
+        function page(num_page)
+        {
+            if(num_page <= 0) num_page = 1;
+            else if(isNaN(num_page)) num_page = 1;
+            $('#body_include').load('https://www.jobbkk.com/jobseeker/job/load_favorite_new/' + num_page);
+        }
+    
+        function Delete() {
+            swal({
+                title: 'Are you sure delete ?',
+                type: 'question',
+                showCancelButton: true,
+                confirmButtonColor: '#f47920',
+                cancelButtonColor: '#d40101',
+                confirmButtonText: 'Confirm',
+                cancelButtonText : 'Cancel',
+            }).then((result) => {
+                if (result.value) {
+    
+                    var table = $('#table_favorite');
+                    var chk_box = table.find('input[type="checkbox"]:checked');
+                    var log_array = [];
+                    
+                    $.each(chk_box, function (i, input){
+                        if(input.value > 0)
+                        {
+                            log_array.push(input.value);
+                        }
+                    });
+    
+                    if(log_array.length > 0)
+                    {
+                        $.post(
+                            'https://www.jobbkk.com/jobseeker/job/favorite_delete',
+                            {jobpost_id:log_array},
+                            function(obj)
+                            {
+                                if(obj.result == 'success')
+                                {
+                                    if($('#alertsuccess--apphis').length == 0)
+                                    {
+                                      swal({
+                                          title : "Success", 
+                                          text : "Deleted success.", 
+                                          type : "success",
+                                          confirmButtonText: 'OK',
+                                          timer : 3000
+                                      });
+                                    }
+                                    page(1);
+                                }
+                                else if(obj.result == 'error')
+                                {
+                                    if($('#alert-error-apphis').length == 0)
+                                    {
+                                      swal({
+                                          title : "Fail", 
+                                          text : "Please try again.", 
+                                          type : "error",
+                                          confirmButtonText: 'OK',
+                                          timer : 3000
+                                      });
+                                    }
+                                    page(1);
+                                }
+                            },
+                            'json'
+                        ); // end $.post
+                    }else{
+                          swal({
+                              title : "Error", 
+                              text : "Please select item to delete.", 
+                              type : "error",
+                              confirmButtonText : 'OK',
+                              timer : 3000
+                          });
+                    }
+                }
+            })
+        }
+    </script>		</div>
+    
+            </article>
+            <!--end ยินดีต้อนรับ-->
+        </section>
+
+        <!--Start Contacts Section-->
+		<footer>
+			<div class="row justify-content-center">
+
+				<div class="col-md-5 text-center">
+					<h4>ABC DEF</h4>
+					<p>zyxwvutsrqponmlkjihgfedcba</p>
+					<strong>Contact Info</strong>
+					<p>(02) 222-2222<br>email@mail.com</p>
+					<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+				</div>
+
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1494.9552590138494!2d100.6004820889737!3d13.631329862369775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x133e221e4499d09c!2zNy1FbGV2ZW4g4LiB4Lil4Liy4LiH4LiL4Lit4Lii4Lio4Lij4Li14Lia4Li44LiN4LmA4Lij4Li34Lit4LiH4oCLIDExNTM0!5e0!3m2!1sth!2sth!4v1587109329390!5m2!1sth!2sth" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+
+				<hr class="socket">
+				&copy; ABC DEF
+
+			</div>
+		</footer>
+	<!--End Contacts Section-->
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+
+    </body>
+</html>

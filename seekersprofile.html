@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SmileJob.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="seekersprofile.css">
+        <link rel="stylesheet" href="new.css">
+        <!-- <link rel="stylesheet" href="stylemain.css"> -->
+        <style type="text/css">
+            .popover{
+                min-width: 500px;
+            }
+            .popover-header{
+                font-size: 18px;
+            }
+            .popover-body{
+                font-size: 14px;
+            }
+        
+            .popover-navigation button{
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <!-- Navigation-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="new1.html">Navbar</a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="new1.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="newfinding.html">Finding</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">III</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">IV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">V</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sign Up
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="new1signup.html">For JobSeekers</a>
+                    <a class="dropdown-item" href="new2signup.html">For Companies</a>
+                  </div>
+                </li>
+                <div class="col-md-12 col-sm-12 col-xs-12 dropdown applicant-dropdown applicant-pro open">
+                    <button class="btn btn-default dropdown-toggle pic-applicant applicant-only" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span class="tooltip-div">
+                            <img src="img/avatar.png" style="max-width: 35px; height: 35px; border-radius: 50%;">
+                            <!-- <div class="circle-red">N</div>-->
+                        </span>
+                        <span class="caret"></span>
+                    </button>
+                
+                    <ul class="dropdown-menu dropdown-menu-applicant" aria-labelledby="dropdownMenu1">
+                        <div class="col-md-12 col-sm-12 col-xs-12 pic-in-applicant margin-top margin-bottom">
+                            <img src="img/avatar.png" style="max-width: 35px; height: 35px;">
+                        </div>
+                
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-pic-applicant margin-bottom">
+                            <ul class="sub-text-pic">
+                                <li class="text-pic-img">ID : 3037224</li>
+                                <li class="text-pic-img margin-bottom-1">natchanondanual@gmail.com</li>
+                                <li class="text-pic-img"><a href="https://www.sj.com/jobseeker/create/new_resume">Edit Profile</a></li>
+                            </ul>
+                        </div>
+                
+                      
+                        <div class="col-md-12 col-sm-12 col-xs-12 sub-list">
+                            <div class="row">
+                            <li><a href="https://www.sj.com/jobseeker">Member Page</a></li>
+                            <li><a href="https://www.sj.com/jobseeker/create/new_resume">New/Edit Resume</a></li>
+                            <li>
+                                <button type="button" class="btnData" id="btnData">Manage <span class="caret"></span></button>
+                                <ul class="dropdownMenuNone listMenuBlock">
+                                    <li><a href="https://www.sj.com/jobseeker/job/apphis"><i class="fa fa-angle-right" aria-hidden="true"></i> Application History</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/favorite_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Favorite</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/icheck_new"><i class="fa fa-angle-right" aria-hidden="true"></i>iCheck</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/interview_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Interview</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/match_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Job Match</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/reqresume_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Request Resume</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/schedule_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Schedule</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/security_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Security</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/controlpanel/setting">Setting usage</a></li>
+                                </ul>
+                            </li>
+                            <li role="separator"></li>
+                            <li><a href="https://www.sj.com/login/resume/logout">Log Out</a></li>
+                        </div>
+                        </div>
+                        
+                        <!-- <div class="col-md-12 col-sm-12 col-xs-12 sub-list">
+                            <div class="row">  
+                                <li><a href="https://www.sj.com/jobseeker">หน้าสมาชิก</a></li>
+                                <li><a href="https://www.sj.com/jobseeker/create/new_resume">สร้าง/แก้ไขเรซูเม่</a></li>
+                                <li><a href="https://www.sj.com/jobseeker/job">จัดการข้อมูลงาน</a></li>
+                                <li><a href="https://www.sj.com/webboard/main">เว็บบอร์ด</a></li>
+                                <li><a href="https://www.sj.com/jobseeker/controlpanel/setting">ตั้งค่า</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="https://www.sj.com/login/resume/logout">ออกจากระบบ</a></li>
+                            </div>
+                        </div> -->
+                    </ul>
+                </div>
+              </ul>
+            </div>
+        </nav>
+        <!--Nav II-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 3.5rem; background:rgba(196, 189, 189, 0.6)!important;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown" style="align-items: center; justify-content: center;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="seekersprofile.html">Member Page<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="seekersprofile2.html">New/Edit Resume</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="seekersprofile3.html">Manage Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="seekersprofile4.html">Setting</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Manage
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="seekersprofile3.html">Application History</a>
+                        <a class="dropdown-item" href="seekersprofile5.html">Favorite</a>
+                        <a class="dropdown-item" href="seekersprofile6.html">iCheck</a>
+                        <a class="dropdown-item" href="seekersprofile7.html">Interview</a>
+                        <a class="dropdown-item" href="seekersprofile8.html">Job Match</a>
+                        <a class="dropdown-item" href="seekersprofile9.html">Request Resume</a>
+                        <a class="dropdown-item" href="seekersprofile10.html">Schedule</a>
+                        <a class="dropdown-item" href="seekersprofile11.html">Security</a>
+                        <a class="dropdown-item" href="seekersprofile4.html">Setting usage</a>
+                    </div>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="new1.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-md-12 menuUser">
+                        <ul>
+                            
+                            
+                            <li class="dropdown">
+                                <button type="button" id="dropdownMenuResume" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Manage <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuResume">
+                                </ul>
+                            </li>
+                            <li><a href="#/login/resume/logout">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        </nav>
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=e9147dfd-497e-4b48-89fe-466c8646e2d1"> </script>
+        <!--End Navigation -->
+
+        <!--Main Page-->
+
+        <section class="container margin-bottom">
+            <article class="row">
+    
+                <!--breadcrumb-->
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div>
+                        <ol class="breadcrumb">
+                            <li><a href="seekersprofile.html">Home</a></li>
+                        </ol>
+                    </div> 
+                </div>		
+                <!--menu jobseeker bar-->
+
+                <!--รูปข้อมูลบริษัท-->
+                <div class="col-md-4 col-sm-4 col-xs-12 data-pic-company">
+                    <!-- <div class="box-circle">
+                        <div class="chart" data-percent="50">50%</div>
+                    </div> -->
+    
+                    <div class="sj-border-grey sj-none overflow-hidden margin-bottom">
+                        <figure class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="pic-company pic-company-cc" style="margin: auto;">
+                                    <section class="profileSeeker">
+                                        <ul>
+                                            <div class="rwz_memPic" id="memPic_img">
+                                                <li>
+                                                    <figure class="resume-pic">
+                                                        <img src="img/avatar.png">
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <label class="upImage" for="test">
+                                                    <i class="fa fa-camera" aria-hidden="true"></i>
+                                                    Choose image										</label> 
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </section>
+    
+                                    <section>
+                                        <h6 class="progressText">Profile Creation</h6>
+                                        <div class="progress progressCustom">
+                                            <div class="progress-bar progressBarUser" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" >%</div>
+                                        </div>
+                                    </section>
+    
+                                    <section class="interViewSave">
+                                        <ul>
+                                            <li>
+                                                <a href="seekersprofile7.html" target="_blank">
+                                                    <h6>0</h6>
+                                                    <p>Interview</p>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="seekersprofile5.html" target="_blank">
+                                                    <h6>0</h6>
+                                                    <p>Favorite</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+    
+                                    <section class="seeProfileFull">
+                                        <!-- <a href="preview.html" target="_blank">ดูโปรไฟล์แบบเต็ม</a> -->
+                                        <a target="_blank">Preview profile</a>
+                                    </section>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    
+                    <section class="flexKnowLedgeBody">
+                        <div>
+                            <div class="gridRecBody">
+                                <figure>
+                                    <img src="laptop.jpg">
+                                </figure>
+    
+                                <figcaption class="linkKnowLedge">
+                                    <div class="bgKnowLedge">
+                                        <p class="hotNewsEllipsis firstLedge is-truncated" style="overflow-wrap: break-word;"><b style="display: inline;">
+                                        การวางแผนชีวิตหลังวัยเกษียณอาจ... </b></p>
+                                    </div>
+    
+                                    <div class="hotNewsRead knowRead">
+                                        <a href="https://www.sj.com/variety/detail/4707/เริ่มก่อนที่จะสายเกิน 4 วิธีวางแผนชีวิตหลังเกษียณให้ปลอดภัย" target="_blank">Read more</a>
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </div>
+                    </section>	
+                </div>
+                <!--end รูปข้อมูลบริษัท-->
+                
+                <!--profile-->
+                <div class="col-md-8 col-sm-8 col-xs-12 margin-bottom">
+                    <div class="bg-drtail overflow-hidden">
+                        <!-- หางานด่วน -->
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="head-a-resume topTop">Need Urgently jobs</h6>
+                            <ul class="fastWorkOTP">
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#create_resume">
+                                        <img src="img/running.png">
+                                            <div>
+                                                <p>Need Urgently jobs</p>
+                                            </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="img/confirm.png">
+                                            <div>
+                                                <p>Confirm OTP</p>
+                                            </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end หางานด่วน -->
+        
+                        <!-- ข้อมูลที่คุณสนใจ -->
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="head-a-resume">Information you are interested</h6>
+                            <ul class="threeStatus">
+                                <li>
+                                    <a href="https://www.sj.com/jobseeker/job/icheck_new" target="_blank">
+                                        <h6>0</h6>
+                                        <p>iCheck</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.sj.com/jobseeker/job/match_new" target="_blank">
+                                        <h6>1518</h6>
+                                        <p>Job Match</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.sj.com/jobseeker/job/apphis" target="_blank">
+                                        <h6>0</h6>
+                                        <p>Application History</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end ข้อมูลที่คุณสนใจ -->
+        
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="head-a-resume">Manage your profile</h6>
+                            <section class="processProfile">
+                                <figure>
+                                    <img src="https://www.sj.com/assets/template/sj/theme02/images/resume/hilightResume.jpg">
+                                </figure>
+
+                                <ul class="targetResume">
+                                    <li class="firstResume">
+                                    <a href="seekersprofile2.html">
+                                    New/Edit Resume</a></li>
+                                    <!-- <li class="lastResume"><a href="#" target="_blank">เรซูเม่ทั้งหมดของคุณ</a></li> -->
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <!--end profile-->
+        
+                <!-- Modal include-->
+                <!-- Modal เปิดเผยทั้งหมด-->
+                <div id="create_resume" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-style">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title">Create Resume</h4>
+                            </div>
+                                
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="modal-footer">
+                                    <!--btn save-->
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="creater-resume">
+                                        <ul>
+                                            <li><a href="https://www.sj.com/jobseeker/create/new_resume/th"><button>Thai Resume</button></a></li>
+                                            <li><a href="https://www.sj.com/jobseeker/create/new_resume/en"><button>English Resume</button></a></li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                    <!--end btn save-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Modal เปิดเผยทั้งหมด-->
+        
+                <!-- Modal -->
+                <div id="privacy_setting" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-style">
+                        <!-- Modal content-->
+                        <form id="form_resume_private">
+                            <input type="hidden" name="resume_id" id="resume_id">
+                            <input type="hidden" id="status" name="status">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Privacy Status</h4>
+                                </div>
+            
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <!--เปิดเผยทั้งหมด-->
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <label class="col-md-12 col-sm-12 col-xs-12 head-form-100 original label-cursor">
+                                                    <input type="radio" value="1" name="value" id="privacy_setting_1"> Public									</label>
+            
+                                                <label class="col-md-12 col-sm-12 col-xs-12 head-form-100 original label-cursor">
+                                                    <input type="radio" value="0" name="value" id="privacy_setting_2"> Private									</label>
+            
+                                                <label class="col-md-12 col-sm-12 col-xs-12 head-form-100 original label-cursor">
+                                                    <input type="radio" value="2" name="value" id="privacy_setting_3"> Partially anonymous									</label>
+            
+                                                <label class="col-md-12 col-sm-12 col-xs-12 head-form-100 original label-cursor private hidden">
+                                                    <input type="checkbox" name="chk_name" id="chk_name" value="1"> FirstName Lastname									</label>
+            
+                                                <label class="col-md-12 col-sm-12 col-xs-12 head-form-100 original label-cursor private hidden">
+                                                    <input type="checkbox" name="chk_address" id="chk_address" value="1"> Address									</label>
+            
+                                                <label class="col-md-12 col-sm-12 col-xs-12 head-form-100 original label-cursor private hidden">
+                                                    <input type="checkbox" name="chk_phone" id="chk_phone" value="1"> Telephone									</label>
+                                                
+                                                <label class="col-md-12 col-sm-12 col-xs-12 head-form-100 original label-cursor private hidden">
+                                                    <input type="checkbox" name="chk_email" id="chk_email" value="1"> Email									</label>
+            
+                                                <label class="col-md-12 col-sm-12 col-xs-12 head-form-100 original label-cursor private hidden">
+                                                    <input type="checkbox" name="chk_mobile" id="chk_mobile" value="1"> Mobile Number									</label>
+            
+                                                <label class="col-md-12 col-sm-12 col-xs-12 head-form-100 original label-cursor private hidden">
+                                                    <input type="checkbox" name="chk_line" id="chk_line" value="1"> Line									</label>
+            
+                                                <label class="col-md-12 col-sm-12 col-xs-12 head-form-100 original label-cursor private hidden">
+                                                    <input type="checkbox" name="chk_facebook" id="chk_facebook" value="1"> Facebook									</label>
+                                                
+                                                <label class="col-md-12 col-sm-12 col-xs-12 head-form-100 original label-cursor private hidden">
+                                                    <input type="checkbox" name="chk_photo" id="chk_photo" value="1"> Resume Photo									</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="row">
+                                    <div class="modal-footer">
+                                        <!--btn save-->
+                                        <div class="col-md-12 col-sm-12 col-xs-12 mem-cancel">
+                                            <ul>
+                                                <li data-dismiss="modal"><button onclick="javascript:form_submit('#form_resume_private');">Save</button></li>
+                                                <li data-dismiss="modal"><button>Close</button></li>
+                                            </ul>
+                                        </div>
+                                        <!--end btn save-->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- end Modal-->
+        
+                <!-- Modal ยืนยันสถานะออนไลน์ ออฟไลน์ ประวัติส่วนตัว-->
+                <div id="modal_change_status" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-style">
+                        <!-- Modal content-->
+                        <form id="form_resume_status">
+                            <input type="hidden" name="resume_id" id="resume_id">
+                            <input type="hidden" name="status" id="status">
+                            <input type="hidden" name="value" id="value">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Confirm</h4>
+                                </div>
+                                <!--สถานะออนไลน์ ใช้ class="green-on" หากออฟไล์ใช้ class="red-off"-->
+                                <div class="modal-body">
+                                    <h6 class="text-align-c">Confirm<span class="green-on" id="onoff"></span>Resume</h6>
+                                </div>
+                                <!--end สถานะออนไลน์ ใช้ class="green-on" หากออฟไล์ใช้ class="red-off"-->
+            
+                                <div class="modal-footer">
+                                    <!--btn save-->
+                                    <div class="col-md-12 col-sm-12 col-xs-12 mem-cancel">
+                                        <ul>
+                                            <li><button type="button" onclick="submit_change_status('#form_resume_status');">Confirm</button></li>
+                                            <li data-dismiss="modal"><button>Cancel</button></li>
+                                        </ul>
+                                    </div>
+                                    <!--end btn save-->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- end Modal ยืนยันสถานะออนไลน์ ออฟไลน์ ประวัติส่วนตัว-->
+        
+                <div id="myModal-25" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-style">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Email Confirm</h4>
+                    </div>
+            
+                    <div class="modal-body">
+                        <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom text-align-c">
+                        <div class="row">
+                        <h6><i class="fa fa-check-circle green-on" aria-hidden="true"></i> <span id="message_modal"></span></h6>
+                        </div>
+                        </div>
+                    </div>
+            
+                    <div class="modal-footer">
+                        <div class="col-md-12 col-sm-12 col-xs-12 confirm-now" align="center">
+                            <button data-dismiss="modal" class="button-red">Confirm</button>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                
+                <!-- Modal สถานะหางานด่วน-->
+                <div id="need_urgent" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-style">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <h2 class="modal-title">Need Urgently jobs</h2>
+                            </div>
+                            <!-- <div class="modal-body">
+                            </div> -->
+        
+                            <div class="row">
+                                <div class="modal-footer">
+                                    <!--btn save-->
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <h6 class="workNow">You want<span>Urgent job</span>Yes or no ?.								</h6>
+                                        <p class="warningOnly"><span class="spanOne">*Note</span>
+                                        The system shows the status of urgent jobs. Let the operators know that <br>
+                                            <span class="spanTwo">The applicant is looking for urgent work										<span class="spanThree">(Status is 7 days old)</span>
+                                                Applicants can press again.</span></p>
+                                        <div class="YesOrno">
+                                            <ul>
+                                                <li><a href="https://www.sj.com/jobseeker/jobseeker/urgent">Yes</a>
+                                                </li>
+                                                <li data-dismiss="modal"><button>No</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--end btn save-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Modal สถานะหางานด่วน-->
+        
+                <!-- Modal กดสถานะหางานด่วน-->
+                <div id="urgent_repeat" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-style">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <h2 class="modal-title">Need Urgently jobs</h2>
+                            </div>
+                            <!-- <div class="modal-body">
+                            </div> -->
+        
+                            <div class="row">
+                                <div class="modal-footer">
+                                    <!--btn save-->
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <h6 class="workNow">You have chosen to show status<span> "Need Urgently jobs" </span>already.								</h6>
+                                        <p class="warningOnly">
+                                        Applicants can <b>"Press"</b> Need a urgent job again									<span class="spanThree">After 7 days</span></p>
+                                        <div class="YesOrno">
+                                            <ul>
+                                                <li class="confirm" data-dismiss="modal"><button>Confirm</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--end btn save-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Modal กดสถานะหางานด่วน-->
+        
+                <!-- Modal ยังไม่มีเรซูเม่ เพื่อต้องการงานด่วน-->
+                <div id="myModalNoResume" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-style">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <h2 class="modal-title">ต้องการงานด่วน</h2>
+                            </div>
+                            <!-- <div class="modal-body">
+                            </div> -->
+        
+                            <div class="row">
+                                <div class="modal-footer">
+                                    <!--btn save-->
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <h6 class="workNow">กรุณาสร้างเรซูเม่ และออนไลน์เรซูเม่ของคุณ<br>
+                                            แล้วกดปุ่ม <span>"ต้องการงานด่วน"</span> อีกครั้ง
+                                        </h6>
+                                        <div class="YesOrno">
+                                            <ul>
+                                                <li data-dismiss="modal"><a href="#">สร้างเรซูเม่</a>
+                                                </li>
+                                                <li data-dismiss="modal"><button>ยกเลิก</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--end btn save-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Modal ยังไม่มีเรซูเม่ เพื่อต้องการงานด่วน-->
+        
+                <!-- Modal ยังไม่ออนไลน์เรซูเม่ เพื่อต้องการงานด่วน-->
+                <div id="need_online" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-style">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <h2 class="modal-title">Need Urgently jobs</h2>
+                            </div>
+                            <!-- <div class="modal-body">
+                            </div> -->
+        
+                            <div class="row">
+                                <div class="modal-footer">
+                                    <!--btn save-->
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <h6 class="workNow">Please online your resume<br>
+                                        then press the button <span>"Need Urgently jobs"</span> once again.								</h6>
+                                        <div class="YesOrno">
+                                            <ul>
+                                                <li><a href="https://www.sj.com/jobseeker/create/new_resume">Online resume</a>
+                                                </li>
+                                                <li data-dismiss="modal"><button>Cancel</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--end btn save-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Modal ยังไม่ออนไลน์เรซูเม่ เพื่อต้องการงานด่วน-->
+        
+                <!-- Modal เปิดเผยทั้งหมด-->
+                <div id="create_resume" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-style">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <h2 class="modal-title">สร้างเรซูเม่</h2>
+                            </div>
+                            <!-- 
+                            <div class="modal-body">
+                            </div> -->
+        
+                            <div class="row">
+                                <div class="modal-footer">
+                                    <!--btn save-->
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="creater-resume">
+                                            <ul>
+                                                <li data-dismiss="modal"><button>สร้างเรซูเม่ภาษาไทย</button></li>
+                                                <li data-dismiss="modal"><button>สร้างเรซูเม่ภาษาอังกฤษ</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--end btn save-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Modal เปิดเผยทั้งหมด-->
+                <a href="#0" class="cd-top">Top</a>
+        
+                <!-- Job recommend-->
+                <!-- job we recommend-->
+            
+            </article>
+        </section>
+
+        <!--Start Contacts Section-->
+		<footer>
+			<div class="row justify-content-center">
+
+				<div class="col-md-5 text-center">
+					<h4>ABC DEF</h4>
+					<p>zyxwvutsrqponmlkjihgfedcba</p>
+					<strong>Contact Info</strong>
+					<p>(02) 222-2222<br>email@mail.com</p>
+					<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+				</div>
+
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1494.9552590138494!2d100.6004820889737!3d13.631329862369775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x133e221e4499d09c!2zNy1FbGV2ZW4g4LiB4Lil4Liy4LiH4LiL4Lit4Lii4Lio4Lij4Li14Lia4Li44LiN4LmA4Lij4Li34Lit4LiH4oCLIDExNTM0!5e0!3m2!1sth!2sth!4v1587109329390!5m2!1sth!2sth" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+
+				<hr class="socket">
+				&copy; ABC DEF
+
+			</div>
+		</footer>
+	<!--End Contacts Section-->
+
+    <script>
+        var options = [];
+    
+        $( '.area-menu a' ).on( 'click', function( event ) {
+    
+            var $target = $( event.currentTarget ),
+                val = $target.attr( 'data-value' ),
+                $inp = $target.find( 'input' ),
+                idx;
+    
+            if ( ( idx = options.indexOf( val ) ) > -1 ) {
+                options.splice( idx, 1 );
+                setTimeout( function() { $inp.prop( 'checked', false ) }, 0);
+            } else {
+                options.push( val );
+                setTimeout( function() { $inp.prop( 'checked', true ) }, 0);
+            }
+    
+            $( event.target ).blur();
+    
+            // console.log( options );
+            return false;
+        });
+    </script>
+    <script>
+        $('.btnData').on('click', function (e) {
+         var next = $(this).next();
+         if (next.hasClass('dropdownMenuNone')) {
+          next.removeClass('dropdownMenuNone');
+         } else {
+          next.addClass('dropdownMenuNone')
+         }
+         e.stopPropagation();
+         e.preventDefault();
+        });
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+    <script>
+        function toggleIcon(e) {
+            $(e.target)
+                .prev('.panel-heading')
+                .find(".more-less")
+                .toggleClass('glyphicon-plus glyphicon-minus')
+        }
+        $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+        $('.panel-group').on('shown.bs.collapse', toggleIcon);
+    </script>
+    <script>
+        $('[data-toggle="tooltip"]').tooltip()
+    
+        // tooltip demo
+        $('.tooltip-div').tooltip({
+            selector: "[data-toggle=tooltip]",
+            container: "body"
+        });
+    </script>
+
+
+
+
+    </body>
+</html>

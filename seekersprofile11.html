@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SmileJob.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="new.css">
+        <link rel="stylesheet" href="seekersprofile.css">
+        
+    </head>
+    <body>
+        
+        <!-- Navigation-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="new1.html">Navbar</a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="new1.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="newfinding.html">Finding</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">III</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">IV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">V</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sign Up
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="new1signup.html">For JobSeekers</a>
+                    <a class="dropdown-item" href="new2signup.html">For Companies</a>
+                  </div>
+                </li>
+                <div class="col-md-12 col-sm-12 col-xs-12 dropdown applicant-dropdown applicant-pro open">
+                    <button class="btn btn-default dropdown-toggle pic-applicant applicant-only" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span class="tooltip-div">
+                            <img src="img/avatar.png" style="max-width: 35px; height: 35px; border-radius: 50%;">
+                            <!-- <div class="circle-red">N</div>-->
+                        </span>
+                        <span class="caret"></span>
+                    </button>
+                
+                    <ul class="dropdown-menu dropdown-menu-applicant" aria-labelledby="dropdownMenu1">
+                        <div class="col-md-12 col-sm-12 col-xs-12 pic-in-applicant margin-top margin-bottom">
+                            <img src="img/avatar.png" style="max-width: 35px; height: 35px;">
+                        </div>
+                
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-pic-applicant margin-bottom">
+                            <ul class="sub-text-pic">
+                                <li class="text-pic-img">ID : 3037224</li>
+                                <li class="text-pic-img margin-bottom-1">natchanondanual@gmail.com</li>
+                                <li class="text-pic-img"><a href="https://www.sj.com/jobseeker/create/new_resume">Edit Profile</a></li>
+                            </ul>
+                        </div>
+                
+                      
+                        <div class="col-md-12 col-sm-12 col-xs-12 sub-list">
+                            <div class="row">
+                            <li><a href="https://www.sj.com/jobseeker">Member Page</a></li>
+                            <li><a href="https://www.sj.com/jobseeker/create/new_resume">New/Edit Resume</a></li>
+                            <li>
+                                <button type="button" class="btnData" id="btnData">Manage <span class="caret"></span></button>
+                                <ul class="dropdownMenuNone listMenuBlock">
+                                    <li><a href="https://www.sj.com/jobseeker/job/apphis"><i class="fa fa-angle-right" aria-hidden="true"></i> Application History</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/favorite_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Favorite</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/icheck_new"><i class="fa fa-angle-right" aria-hidden="true"></i>iCheck</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/interview_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Interview</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/match_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Job Match</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/reqresume_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Request Resume</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/schedule_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Schedule</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/job/security_new"><i class="fa fa-angle-right" aria-hidden="true"></i> Security</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/controlpanel/setting">Setting usage</a></li>
+                                </ul>
+                            </li>
+                            <li role="separator"></li>
+                            <li><a href="https://www.sj.com/login/resume/logout">Log Out</a></li>
+                        </div>
+                        </div>
+                        
+                        <!-- <div class="col-md-12 col-sm-12 col-xs-12 sub-list">
+                            <div class="row">  
+                                <li><a href="https://www.sj.com/jobseeker">หน้าสมาชิก</a></li>
+                                <li><a href="https://www.sj.com/jobseeker/create/new_resume">สร้าง/แก้ไขเรซูเม่</a></li>
+                                <li><a href="https://www.sj.com/jobseeker/job">จัดการข้อมูลงาน</a></li>
+                                <li><a href="https://www.sj.com/webboard/main">เว็บบอร์ด</a></li>
+                                <li><a href="https://www.sj.com/jobseeker/controlpanel/setting">ตั้งค่า</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="https://www.sj.com/login/resume/logout">ออกจากระบบ</a></li>
+                            </div>
+                        </div> -->
+                    </ul>
+                </div>
+              </ul>
+            </div>
+        </nav>
+        <!--Nav II-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 3.5rem; background:rgba(196, 189, 189, 0.6)!important;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown" style="align-items: center; justify-content: center;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="seekersprofile.html">Member Page<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="seekersprofile2.html">New/Edit Resume</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="seekersprofile3.html">Manage Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="seekersprofile4.html">Setting</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Manage
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="seekersprofile3.html">Application History</a>
+                        <a class="dropdown-item" href="seekersprofile5.html">Favorite</a>
+                        <a class="dropdown-item" href="seekersprofile6.html">iCheck</a>
+                        <a class="dropdown-item" href="seekersprofile7.html">Interview</a>
+                        <a class="dropdown-item" href="seekersprofile8.html">Job Match</a>
+                        <a class="dropdown-item" href="seekersprofile9.html">Request Resume</a>
+                        <a class="dropdown-item" href="seekersprofile10.html">Schedule</a>
+                        <a class="dropdown-item" href="seekersprofile11.html">Security</a>
+                        <a class="dropdown-item" href="seekersprofile4.html">Setting usage</a>
+                    </div>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="new1.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-md-12 menuUser">
+                        <ul>
+                            
+                            
+                            <li class="dropdown">
+                                <button type="button" id="dropdownMenuResume" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Manage <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuResume">
+                                </ul>
+                            </li>
+                            <li><a href="#/login/resume/logout">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        </nav>
+
+        <!--End Navigation -->
+        
+        
+
+        <!--Main Page-->
+
+        <section class="container margin-bottom">
+            <article class="row">
+                
+                            <div class="col-md-12 col-sm-12 col-xs-12 sj-link-text margin-bottom margin-top">
+                    <ul>
+                        <li><a href="https://www.sj.com/jobseeker">Home</a></li>
+                        
+                                                    <li> &gt; </li>
+                                                                    <li><a class="text-red">Security</a></li>
+                                
+                        
+                    </ul>
+                </div>
+    
+                
+            <!--รูปข้อมูลบริษัท-->
+            <div class="col-md-3 col-sm-4 col-xs-12 data-pic-company">
+                <div class="box-circle" id="resume_score">
+                    <div class="chart" data-percent="2">2%<canvas height="80" width="80"></canvas></div>
+                </div>
+    
+                <div class="sj-border-grey sj-border-radius sj-none overflow-hidden margin-bottom">
+                    <figure class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="pic-company pic-company-cc">
+                                <img src="https://www.sj.com/assets/template/sj/theme01/assets/images/jobseeker/mem_prof_pic.jpg">
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+    
+                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom">
+                    <div class="row">
+                        <div class="see-profile see-profile-1 preview-resume" id="preview_resume">
+                                                            <a target="_blank">Preview</a>
+                                                </div>
+                    </div>
+                </div>
+                <!--menu dashboard-->
+                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom">
+                    <div class="row">
+                        <!--menu dashboard pc-->
+                        <div class="nav-side-menu">
+                            <div class="bg-side-menu">
+                                <div class="dashboard-job">
+                                    <h3>Menu for Applicant</h3>
+                                </div>
+                                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                            </div>
+    
+                            <div class="menu-list">
+                                <ul id="menu-content" class="menu-content collapse out menu-dashboard">
+                                    <li><a href="https://www.sj.com/jobseeker"><img src="https://www.sj.com/assets/template/sj/theme02/images/resume/menu-resume-1.png">Home <span class="dashboard-new">New</span></a></li>
+                                    <li id="create_update_resume"><a href="https://www.sj.com/jobseeker/create/new_resume"><img src="https://www.sj.com/assets/template/sj/theme02/images/resume/menu-resume-2.png">New/Edit Resume</a></li>
+                                    <li id="manage_infomation" data-toggle="collapse" data-target="#postjob" class="collapsed"><a><img src="https://www.sj.com/assets/template/sj/theme02/images/resume/menu-resume-3.png">Manage										<span class="arrow"></span></a>
+                                    </li>
+                                    <ul class="sub-menu collapse job-sub-menu in" id="postjob">
+                                        <li><a href="https://www.sj.com/jobseeker/job/apphis">Application History</a></li>
+                                        <li><a href="https://www.sj.com/jobseeker/job/favorite_new">Favorite</a></li>
+                                        <li><a href="https://www.sj.com/jobseeker/job/icheck_new">iCheck</a></li>
+                                        <li><a href="https://www.sj.com/jobseeker/job/interview_new">Interview</a></li>
+                                        <li><a href="https://www.sj.com/jobseeker/job/match_new">Job Match</a></li>
+                                        <li><a href="https://www.sj.com/jobseeker/job/reqresume_new">Request Resume</a></li>
+                                        <li><a href="https://www.sj.com/jobseeker/job/schedule_new">Schedule</a></li>
+                                        <li class="current"><a href="https://www.sj.com/jobseeker/job/security_new">Security</a></li>
+                                    </ul>
+                                    <li><a href="https://www.sj.com/jobseeker/addition/quiz"><img src="https://www.sj.com/assets/template/sj/theme02/images/resume/menu-resume-4.png">Questionnaire</a></li>
+                                    <li><a href="https://www.sj.com/webboard/main"><img src="https://www.sj.com/assets/template/sj/theme02/images/resume/menu-resume-5.png">Webboard</a></li>
+                                    <li><a href="https://www.sj.com/jobseeker/controlpanel/setting"><img src="https://www.sj.com/assets/template/sj/theme02/images/resume/menu-resume-6.png">Setting</a></li>
+                                    <li><a href="#"><img src="https://www.sj.com/assets/template/sj/theme02/images/resume/menu-resume-7.png">Recommended usage</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end menu dashboard pc-->
+                    </div>
+                </div>
+                <!--end menu dashboard-->
+            </div>
+    
+            <div class="col-md-9 col-sm-8 col-xs-12" id="body_include">
+                        
+                <!--ยินดีต้อนรับ-->
+                    <div class="bg-drtail overflow-hidden">
+                        <div class="col-xs-12 col-sm-12 col-md-12 margin-bottom">
+                            <div class="history-work mt margin-bottom-1">
+                                <h4>Security <a href="#"><i class="fa fa-info-circle color-info" aria-hidden="true"></i></a></h4>
+                            </div>
+                            <!--head ไม่อนุญาต-->
+                            <div class="col-sm-6 col-xs-6 col-md-6 btn-anti">
+                                <div class="row">
+                                    <h5>Blacklist (Unlimit)</h5>
+                                    <p class="margintop">Companies will not be able to searched and your resume. Like your resume does not exist in our system sj.COM.</p>
+                                </div>
+                            </div>
+                            <!--end head ไม่อนุญาต-->
+                            <!--from ไม่อนุญาต-->
+                            <form action="https://www.sj.com/jobseeker/job/security_new" method="post">
+                                <input type="hidden" name="1" value="1">
+                                <div class="col-sm-6 col-xs-6 col-md-6 line-anti margin-bottom">
+                                    <div class="col-sm-12 col-xs-12 col-md-12 min-width">
+                                        <div class="contacts blacklist">
+                                            <p>Specific company name to hide this resume. <br> <span class="text-red"> ( Only sj's Client )</span></p>
+                                                                                                    <div class="form-group multiple-form-group input-group margintop">
+                                                            <input type="hidden" name="black_field[]">
+                                                            <input type="text" class="form-control typeahead margin-bottom-1 ui-autocomplete-input" autocomplete="off">
+                                                            <span class="input-group-btn">
+                                                                <button type="button" id="addfieldblacklist" class="btn btn-add">+</button>
+                                                            </span>
+                                                        </div>
+                                                                                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 mem-cancel margin-bottom">
+                                        <ul>
+                                            <input type="hidden" name="action_type" value="blacklist">
+                                            <li><button type="submit">Save</button></li>
+                                            <li><button type="button" onclick="location.reload();">Cencel</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                            <!--end from ไม่อนุญาต-->
+                            <!--head อนุญาต-->
+                            <div class="col-sm-6 col-xs-6 col-md-6 btn-anti">
+                                <div class="row">
+                                    <h5>Wishlist (Unlimit)</h5>
+                                    <p class="margintop">Companies will be able to searched your resume, contact information, When your resume are private status.</p>
+                                </div>
+                            </div>
+                            <!--end head อนุญาต-->
+                            <form action="https://www.sj.com/jobseeker/job/security_new" method="post">
+                                <!--from อนุญาต-->
+                                <div class="col-sm-6 col-xs-6 col-md-6 line-anti margin-bottom">
+                                    <div class="col-sm-12 col-xs-12 col-md-12 min-width">
+                                        <div class="contacts wishlist">
+                                            <p>Specific company name to see this resume. <br> <span class="text-red"> ( Only sj's Client )</span></p>
+                                                                                <div class="form-group multiple-form-group input-group margintop">
+                                                <input type="hidden" name="wish_field[]" value="">
+                                                <input type="text" class="form-control typeahead margin-bottom-1 ui-autocomplete-input" autocomplete="off">
+                                                <span class="input-group-btn">
+                                                    <button type="button" id="addfieldwishlist" class="btn btn-add">+</button>
+                                                </span>
+                                            </div>
+                                                                                    </div>
+                                    </div>
+                                    <!--btn save-->
+                                    <div class="col-md-12 col-sm-12 col-xs-12 mem-cancel margin-bottom">
+                                        <ul>
+                                            <input type="hidden" name="action_type" value="wishlist">
+                                            <li><button type="submit">Save</button></li>
+                                            <li><button onclick="location.reload();">Cencel</button></li>
+                                        </ul>
+                                    </div>
+                                    <!--end btn save-->
+                                </div>
+                                <!--end from อนุญาต-->
+                            </form>
+                        </div>
+                    </div>
+                <!--ยินดีต้อนรับ-->
+    
+    <!--ความเป็นส่วนตัว-->
+    
+    <style type="text/css">
+        .ui-autocomplete {
+            padding: 8px;
+        }
+    </style>
+    
+    <script src="https://www.sj.com/assets/libraries/jquery-ui/1.11.4/jquery-ui.min.js?ver=0"></script>
+    <script type="text/javascript">
+    
+        $( document ).ready(function() {
+    
+            $(document).on("click", '.btn-add', function () {
+                var id = '';
+                var length = '';
+                if($(this).attr('id') == 'addfieldblacklist'){
+                    length = $('.blacklist input[name^="black_field"]').length;
+                    id = 'addfieldblacklist';
+                }else{
+                    length = $('.wishlist input[name^="wish_field"]').length;
+                    id = 'addfieldwishlist';
+                }
+    
+                if (length <= 10) {
+    
+                    var html = '';
+    
+                    html  = '<div class="form-group multiple-form-group input-group margintop">';
+    
+                    if(id == 'addfieldblacklist'){
+                        html += '<input type="hidden" name="black_field[]" value="">';
+                    }else{
+                        html += '<input type="hidden" name="wish_field[]" value="">';
+                    }
+    
+                    html += '<input type="text" class="form-control typeahead margin-bottom-1" autocomplete="off">';
+                    html += '<span class="input-group-btn">';
+                    html += '<button type="button" id= "'+id+'" class="btn btn-add">+</button>';
+                    html += '</span>';
+                    html += '</div>';
+    
+                    $(this)
+                        .removeClass('btn btn-add')
+                        .attr('id','removefield')
+                        .toggleClass(' btn btn-danger-1 btn-remove')
+                        .html('–');
+    
+                    if(id == 'addfieldblacklist'){
+                        $('.blacklist').append(html);
+                    }else{
+                        $('.wishlist').append(html);
+                    }
+    
+                    setAutoComplete();
+                    // setMajorName();
+                }
+                if (length == 10) {
+                    $('#bt_add_major').fadeOut();
+                }
+    
+            });
+    
+            $(document).on("click", '#removefield', function () {
+                $(this).closest('div').remove();
+            });
+    
+            function setAutoComplete() {
+    
+                $( "input.typeahead" ).autocomplete({
+                    minLength: 0,
+                    select: function (event, ui) {
+                        $(this).prev().val(ui.item.values)
+                    },
+                    source: function( request, response) {
+                        $.ajax({
+                            url: 'https://www.sj.com/jobseeker/job/search_company_not_black_wish',
+                            type: 'POST',
+                            dataType: 'JSON',
+                            data: {keyword: request.term},
+                            success: function( data ) {
+                                if(data.result == 'success')
+                                {
+                                    label = [];
+                                    value = {};
+    
+                                    response($.map( data.lists, function( item ) {
+                                        return {
+                                          label: item.label,
+                                          value: item.label,
+                                          values : item.value
+                                        }
+                                    }));
+                                }
+                            }
+                        });
+                    },
+                }).autocomplete( "widget" ).addClass( "dropdown-menu" );
+            }
+    
+            $( "input.typeahead" ).autocomplete({
+                minLength: 0,
+                select: function (event, ui) {
+                    $(this).prev().val(ui.item.values)
+                },
+                source: function( request, response) {
+                    keyword = $( "input.typeahead" ).val().trim();
+                    $.ajax({
+                        url: 'https://www.sj.com/jobseeker/job/search_company_not_black_wish',
+                        type: 'POST',
+                        dataType: 'JSON',
+                        data: {keyword: request.term},
+                        success: function( data ) {
+                            if(data.result == 'success')
+                            {
+                                label = [];
+                                value = {};
+        
+                                response($.map( data.lists, function( item ) {
+                                    return {
+                                      label: item.label,
+                                      value: item.label,
+                                      values : item.value
+                                    }
+                                }));
+                            }
+                        }
+                    });
+                },
+                // appendTo: '#menu-container'
+            }).autocomplete( "widget" ).addClass( "dropdown-menu" );
+    
+        });
+    
+        jQuery.ui.autocomplete.prototype._resizeMenu = function () {
+          var ul = this.menu.element;
+          ul.outerWidth(this.element.outerWidth());
+        }
+    </script>
+    <!--End ความเป็นส่วนตัว-->
+            </div>
+    
+            </article>
+            <!--end ยินดีต้อนรับ-->
+        </section>
+
+        <!--Start Contacts Section-->
+		<footer>
+			<div class="row justify-content-center">
+
+				<div class="col-md-5 text-center">
+					<h4>ABC DEF</h4>
+					<p>zyxwvutsrqponmlkjihgfedcba</p>
+					<strong>Contact Info</strong>
+					<p>(02) 222-2222<br>email@mail.com</p>
+					<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+				</div>
+
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1494.9552590138494!2d100.6004820889737!3d13.631329862369775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x133e221e4499d09c!2zNy1FbGV2ZW4g4LiB4Lil4Liy4LiH4LiL4Lit4Lii4Lio4Lij4Li14Lia4Li44LiN4LmA4Lij4Li34Lit4LiH4oCLIDExNTM0!5e0!3m2!1sth!2sth!4v1587109329390!5m2!1sth!2sth" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+
+				<hr class="socket">
+				&copy; ABC DEF
+
+			</div>
+		</footer>
+	<!--End Contacts Section-->
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+
+    </body>
+</html>
